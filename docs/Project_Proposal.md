@@ -11,15 +11,12 @@
 # AI Hardware Project Proposal Template
 
 ## 1. Project Title
-Name of the Team
+AI AI Captain
+Argie Cunanan and James Jiang
 
-List of students in the team
-
-Provide a clear and concise title for your project. 
-
+MonkAI Detector
 ## 2. Platform Selection
-Select one platform category and justify your choice.
-
+TinyML - 
 **Undergraduates:** Edge-AI, TinyML, or Neuromorphic platforms  
 **Graduates:** open-source AI accelerators (Ztachip, VTA, Gemmini, VeriGOOD-ML, NVDLA) or any of the above 
 
@@ -40,8 +37,8 @@ List each member’s main role.
 
 | Name | Role | Responsibilities |
 |------|------|------------------|
-| [Student A] | Team Lead | Coordination, documentation |
-| [Student B] | Hardware | Setup, integration |
+| [Argie Cunanan] | Team Lead | Coordination, documentation |
+| [James Jiang] | Hardware | Setup, integration |
 | [Student C] | Software | Model training, inference |
 | [Student D] | Evaluation | Testing, benchmarking |
 
