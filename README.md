@@ -20,7 +20,7 @@ List all team members in `docs/Project_Proposal.md`.
 
 ## 📋 Required Deliverables
 1. **Project Proposal** — due Nov. 5, 2025, 11:59 PM  
-2. **Midterm Presentation** — Nov. 19,2025, 11:59 PM  
+2. **Midterm Presentation** — Dec. 9,2025, 11:59 PM  
 3. **Final Presentation and Report** — Dec. 17, 11:59 PM
 
 ## 🚀 How to Use This Template
