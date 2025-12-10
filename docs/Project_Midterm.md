@@ -3,7 +3,7 @@
 
 **Course:** ECE 4332 / ECE 6332 — AI Hardware Design and Implementation  
 **Semester:** Fall 2025  
-**Proposal Deadline:** December 9, 2025 — 11:59 PM  
+**Proposal Deadline:** November 6, 2025 — 11:59 PM  
 **Submission:** Upload to Canvas (PDF) and to GitHub (`/docs` folder)
 
 ---
