@@ -1,2 +1,3 @@
 # Presentations
-Add your Midterm and Final slides here.
+Project Proposal
+Project Midterm
