@@ -1,11 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/v3c0XywZ)
-# AI Hardware Project Template
+# 🤖 AI Hardware Project
 ECE 4332 / ECE 6332 — AI Hardware  
 Fall 2025
 
 ## 🧭 Overview
-This repository provides a structured template for your team project in the AI Hardware class.  
-Each team will **clone this template** to start their own project repository.
+This repository provides the files Ai Ai Captain's project in the AI Hardware class.  
 
 ## 🗂 Folder Structure
 - `docs/` – project proposal and documentation  
