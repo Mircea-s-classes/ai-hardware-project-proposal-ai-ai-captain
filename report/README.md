@@ -88,10 +88,46 @@ The MonkAI Detector demonstrates successful deployment of a real-time gesture re
 
 ## 8. Usage Instructions
 To run or use the project:
+## Using Edge Impulse
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
+1. **Create an Edge Impulse account**  
+   - Sign up at [Edge Impulse](https://www.edgeimpulse.com/) and verify your email.
 
-# Run the main script
-python main.py
+2. **Create a new image recognition project**  
+   - Choose **Image Classification** as the project type.  
+   - Give your project a descriptive name (e.g., *Face Recognition Model*).
+
+3. **Upload data**  
+   - Download the training and testing datasets:  
+     - **Training data:** [Link](https://drive.google.com/file/d/1SH2recEAaaVWImLgN__McQvwTYKY-ysW/view?usp=sharing)  
+     - **Testing data:** [Link](https://drive.google.com/file/d/1fJWdAHOvf8HB13sc2bxo-6iI5FwctW1E/view?usp=sharing)  
+   - Upload the files into the project under the appropriate **“Dataset”** section.  
+   - Optionally, add more images of your own face to improve recognition accuracy.
+
+4. **Label the data**  
+   - Ensure each image is correctly labeled according to the person or class it represents.
+
+5. **Create and configure the impulse**  
+   - Select the **Image Processing** block to resize and normalize images.  
+   - Add a **Learning block** (e.g., Transfer Learning or Keras) for training the model.  
+   - Configure parameters such as number of training cycles and learning rate.
+
+6. **Train the model**  
+   - Click **“Start Training”**.  
+   - Monitor accuracy and loss metrics on the dashboard.  
+   - If performance is low, consider adding more images or adjusting augmentation settings.
+
+7. **Test the model**  
+   - Use the testing dataset to evaluate performance.  
+   - Check metrics such as accuracy, precision, and recall.  
+   - Optionally, test live using your device camera to see how it performs in real-world conditions.
+
+8. **Deploy the model**  
+   - Once satisfied with the performance, click **Deploy** to export the model.  
+   - Choose deployment options such as **Arduino library**, **Python library**, or **on-device Edge Impulse SDK**, depending on your target hardware.
+
+9. **Run the model on your device**  
+   - Install the appropriate runtime library on your device (e.g., OpenMV Cam, Raspberry Pi, or smartphone).  
+   - Load the model and run live inference using the camera feed.  
+   - Ensure proper lighting and camera positioning for best accuracy.
+
