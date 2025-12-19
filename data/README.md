@@ -4,8 +4,7 @@ This project uses a labeled image dataset for training and evaluating the model.
 ### 🔹 Training Data
 - **Purpose:** Used to train the model and learn feature representations  
 - **Link:**  
-  https://drive.google.com/file/d/1SH2recEAaaVWImLgN__McQvwTYKY-ysW/view?usp=sharing
-
+https://drive.google.com/file/d/1kcL8fdhkdAPc1Zw4kVIiWk5KiyvfKAcC/view?usp=sharing
 ### 🔹 Testing Data
 - **Purpose:** Used to evaluate model performance on unseen data  
 - **Link:**  
