@@ -59,7 +59,7 @@ Captured images are processed locally, and the trained model outputs the predict
 ## 4. Procedure
 1. Captured ~2,000 images of three hand gestures using the OpenMV Cam H7  
 2. Labeled and uploaded images to Edge Impulse  
-3. Split data into **training (80%)** and **testing (20%)** sets  
+3. Split data into **training (67%)** and **testing (33%)** sets  
 4. Created an impulse with **image input** (96x96) and **classification layer**  
 5. Converted images to grayscale to reduce storage and simplify classification  
 6. Trained a CNN with three 2D pooling layers for 15 cycles (dropout = 0.1)  
@@ -87,47 +87,50 @@ The MonkAI Detector demonstrates successful deployment of a real-time gesture re
 ---
 
 ## 8. Usage Instructions
-To run or use the project:
-## Using Edge Impulse
 
-1. **Create an Edge Impulse account**  
-   - Sign up at [Edge Impulse](https://www.edgeimpulse.com/) and verify your email.
+Follow these steps to run or use the MonkAI Detector project using Edge Impulse:
 
-2. **Create a new image recognition project**  
-   - Choose **Image Classification** as the project type.  
-   - Give your project a descriptive name (e.g., *Face Recognition Model*).
+### 1. Create an Edge Impulse Account
+- Sign up at [Edge Impulse](https://www.edgeimpulse.com/) and verify your email.
 
-3. **Upload data**  
-   - Download the training and testing datasets:  
-     - **Training data:** [Link](https://drive.google.com/file/d/1SH2recEAaaVWImLgN__McQvwTYKY-ysW/view?usp=sharing)  
-     - **Testing data:** [Link](https://drive.google.com/file/d/1fJWdAHOvf8HB13sc2bxo-6iI5FwctW1E/view?usp=sharing)  
-   - Upload the files into the project under the appropriate **“Dataset”** section.  
-   - Optionally, add more images of your own face to improve recognition accuracy.
+### 2. Create a New Image Recognition Project
+- Choose **Image Classification** as the project type.  
+- Give your project a descriptive name (e.g., *Face Recognition Model*).
 
-4. **Label the data**  
-   - Ensure each image is correctly labeled according to the person or class it represents.
+### 3. Upload Data
+- Download the training and testing datasets:  
+  - **Training data:** [Download Link](https://drive.google.com/file/d/1kcL8fdhkdAPc1Zw4kVIiWk5KiyvfKAcC/view?usp=drive_link)  
+  - **Testing data:** [Download Link](https://drive.google.com/file/d/1fJWdAHOvf8HB13sc2bxo-6iI5FwctW1E/view?usp=sharing)  
+- Upload the files to the project under the **Dataset** section.  
+- Optionally, add more images of your own face to improve recognition accuracy.
 
-5. **Create and configure the impulse**  
-   - Select the **Image Processing** block to resize and normalize images.  
-   - Add a **Learning block** (e.g., Transfer Learning or Keras) for training the model.  
-   - Configure parameters such as number of training cycles and learning rate.
+### 4. Label the Data
+- Ensure each image is correctly labeled according to the person or class it represents.
 
-6. **Train the model**  
-   - Click **“Start Training”**.  
-   - Monitor accuracy and loss metrics on the dashboard.  
-   - If performance is low, consider adding more images or adjusting augmentation settings.
+### 5. Create and Configure the Impulse
+- Select the **Image Processing** block to resize and normalize images.  
+- Add a **Learning block** (e.g., Transfer Learning or Keras) for training the model.  
+- Configure training parameters, such as **number of cycles** and **learning rate**.
 
-7. **Test the model**  
-   - Use the testing dataset to evaluate performance.  
-   - Check metrics such as accuracy, precision, and recall.  
-   - Optionally, test live using your device camera to see how it performs in real-world conditions.
+### 6. Train the Model
+- Click **“Start Training”**.  
+- Monitor **accuracy** and **loss metrics** on the dashboard.  
+- If performance is low, consider adding more images or adjusting **augmentation settings**.
 
-8. **Deploy the model**  
-   - Once satisfied with the performance, click **Deploy** to export the model.  
-   - Choose deployment options such as **Arduino library**, **Python library**, or **on-device Edge Impulse SDK**, depending on your target hardware.
+### 7. Test the Model
+- Evaluate the model using the testing dataset.  
+- Check metrics such as **accuracy**, **precision**, and **recall**.  
+- Optionally, test live using your device camera to see real-time performance.
 
-9. **Run the model on your device**  
-   - Install the appropriate runtime library on your device (e.g., OpenMV Cam, Raspberry Pi, or smartphone).  
-   - Load the model and run live inference using the camera feed.  
-   - Ensure proper lighting and camera positioning for best accuracy.
+### 8. Deploy the Model
+- Once satisfied with performance, click **Deploy** to export the model.  
+- Choose deployment options based on your hardware:  
+  - **Arduino library**  
+  - **Python library**  
+  - **On-device Edge Impulse SDK**
+
+### 9. Run the Model on Your Device
+- Install the appropriate runtime library on your device (OpenMV Cam, Raspberry Pi, smartphone, etc.).  
+- Load the trained model and run **live inference** using the camera feed.  
+- Ensure proper **lighting** and **camera positioning** for optimal accuracy.
 
